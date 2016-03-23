@@ -10,8 +10,6 @@
 ## vector (ignoring NA values)
 ## NOTE: Do not round the result!
 
-
-
 directory <- getwd()
 pollutantmean <- function(directory, pollutant, id = 1:322) {
         filelist <- list.files(directory, full.names = TRUE)
@@ -31,3 +29,5 @@ x_10 <- pollutantmean(directory, "nitrate", id = 1:10)
 y_10 <- pollutantmean(directory, "sulfate", id = 1:10)
 x_70_72 <- pollutantmean(directory, "nitrate", id = 70:72)
 x_23 <- pollutantmean(directory, "nitrate", id = 23)
+
+## x [1] 1.682678, y [1] 3.209488 CHECK: OK! ##
