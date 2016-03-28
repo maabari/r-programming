@@ -21,6 +21,7 @@ pollutantmean <- function(directory, pollutant, id = 1:322) {
         return(x)
 }
 
+## See if the results matches the output.
 x <- pollutantmean(directory, "nitrate", id = 1:322)
 y <- pollutantmean(directory, "sulfate", id = 1:322)
 x_50 <- pollutantmean(directory, "nitrate", id = 1:50)
