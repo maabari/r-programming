@@ -12,7 +12,7 @@ complete <- function(directory, id = 1:332) {
         dataframe
 }
 
-complete(getwd(), 1)                    #result 117. CHECK: OK!
+complete(getwd(), 1)                    #CHECK: OK!
 complete(getwd(), c(2, 4, 8, 10, 12))   #CHECK: OK!
 complete(getwd(), 30:25)                #CHECK: OK!
 complete(getwd(), 3)                    #CHECK: OK!
